@@ -124,4 +124,4 @@ The downstream benchmarks (MoleculeNet, QM9, MoleculeACE, TDC ADMET), the contro
 
 ## Licence
 
-Not chosen yet.
+MIT.
