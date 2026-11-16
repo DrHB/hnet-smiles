@@ -22,16 +22,16 @@ Python 3.11, PyTorch 2.4 or newer. RDKit is pinned to 2026.03.3, the version beh
 
 Eight models, two per objective. The 30M round uses widths 256/384/512, AdamW and 3 epochs. The 20M round uses widths 256/320/384, Muon and 5 epochs, and its fingerprint and descriptor heads read one position instead of averaging over bytes.
 
-| folder | objective | parameters | steps | hours on one A6000 |
-|---|---|---|---|---|
-| `next-byte-30m` | next byte | 30,342,784 | 101,289 | 10.7 |
-| `fingerprint-30m` | fingerprint | 32,901,248 | 101,289 | 10.0 |
-| `descriptors-30m` | descriptors | 30,991,673 | 101,289 | 9.5 |
-| `masked-fragments-30m` | masked fragments | 30,342,784 | 101,289 | 7.6 |
-| `next-byte-20m` | next byte | 19,555,520 | 168,815 | 15.0 |
-| `fingerprint-20m` | fingerprint | 22,245,184 | 168,815 | 16.6 |
-| `descriptors-20m` | descriptors | 20,335,609 | 168,815 | 13.1 |
-| `masked-fragments-20m` | masked fragments | 19,555,520 | 168,815 | 10.9 |
+| folder | objective | parameters | steps |
+|---|---|---|--- |
+| `next-byte-30m` | next byte | 30,342,784 | 101,289 |
+| `fingerprint-30m` | fingerprint | 32,901,248 | 101,289 |
+| `descriptors-30m` | descriptors | 30,991,673 | 101,289 |
+| `masked-fragments-30m` | masked fragments | 30,342,784 | 101,289 |
+| `next-byte-20m` | next byte | 19,555,520 | 168,815 |
+| `fingerprint-20m` | fingerprint | 22,245,184 | 168,815 |
+| `descriptors-20m` | descriptors | 20,335,609 | 168,815 |
+| `masked-fragments-20m` | masked fragments | 19,555,520 | 168,815 |
 
 ```python
 import torch
