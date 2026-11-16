@@ -224,4 +224,5 @@ def load(path, device="cpu"):
     cfg = json.loads((Path(path) / "config.json").read_text())
     model = HNet(tuple(cfg["widths"]), tuple(cfg["layers"]), cfg["causal"], cfg["out"], cfg["readout"])
     model.load_state_dict(load_file(str(Path(path) / "model.safetensors")))
+    model.config = cfg
     return model.to(device).eval()

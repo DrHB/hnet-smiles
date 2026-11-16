@@ -268,7 +268,7 @@ def main():
     for path in a.models:
         name = Path(path).name
         model = load(path, dev)
-        cfg = json.loads((Path(path) / "config.json").read_text()) if Path(path).exists() else {}
+        cfg = model.config
         mols = cuts(model, smiles)
         rng = np.random.default_rng(0)  # one stream, in this order, for every shuffled control and probe split
         vocab[name], pieces = level([(m[0], m[1]) for m in mols], rng)
