@@ -1,0 +1,157 @@
+{
+ "model": "descriptors-30m",
+ "molecules": 50000,
+ "device": "mps",
+ "pieces": {
+  "strings": {
+   "learned": {
+    "bytes_per_unit": 2.8232485649231953,
+    "distinct": 3813,
+    "atoms_split": 0.6474767569323211
+   },
+   "random": {
+    "bytes_per_unit": 2.8232485649231953,
+    "distinct": 62175,
+    "atoms_split": 0.4643741626405749
+   }
+  },
+  "chem": {
+   "molecules": 50000,
+   "skipped": 0,
+   "learned": {
+    "cut_rate_brics": 0.7204592800736398,
+    "cut_rate_nonbrics": 0.6057654183526601,
+    "cut_rate_ring": 0.5976161515466001,
+    "rings_whole": 0.08277661720983623,
+    "fg_whole": {
+     "carboxylic_acid": 0.0,
+     "ester": 0.0,
+     "amide": 5.656588511468733e-05,
+     "carbonyl": 0.007246520284317025,
+     "nitro": 0.9779448621553885,
+     "sulfonyl": 0.9580342352291552,
+     "nitrile": 0.8756578947368421,
+     "cf3": 0.0,
+     "methoxy": 0.7377442577991087,
+     "phenyl": 0.17725582967218656
+    }
+   },
+   "random": {
+    "cut_rate_brics": 0.5516249653161625,
+    "cut_rate_nonbrics": 0.5763843250142574,
+    "cut_rate_ring": 0.5884085895914625,
+    "rings_whole": 0.02822675517086491,
+    "fg_whole": {
+     "carboxylic_acid": 0.13220815752461323,
+     "ester": 0.03159224936815501,
+     "amide": 0.11912775405153152,
+     "carbonyl": 0.28764329696873703,
+     "nitro": 0.08822055137844612,
+     "sulfonyl": 0.0706791827719492,
+     "nitrile": 0.45460526315789473,
+     "cf3": 0.05944055944055944,
+     "methoxy": 0.6442406582104903,
+     "phenyl": 0.037958155396479155
+    }
+   },
+   "fg_count": {
+    "carboxylic_acid": 4977,
+    "ester": 7122,
+    "amide": 35357,
+    "carbonyl": 50507,
+    "nitro": 1995,
+    "sulfonyl": 5433,
+    "nitrile": 3040,
+    "cf3": 3432,
+    "methoxy": 11668,
+    "phenyl": 65098
+   }
+  },
+  "brics_preference": 0.13945322141907468,
+  "no_atom": 0.07689189622550749,
+  "whole_functional_group": 0.03890709681557259,
+  "cuts_atom": 0.04057723759740885
+ },
+ "groups": {
+  "strings": {
+   "learned": {
+    "bytes_per_unit": 5.252775629826923,
+    "distinct": 29491,
+    "atoms_split": 0.16901465632739232
+   },
+   "random": {
+    "bytes_per_unit": 5.252775629826923,
+    "distinct": 115145,
+    "atoms_split": 0.2627177134505298
+   }
+  },
+  "chem": {
+   "molecules": 50000,
+   "skipped": 0,
+   "learned": {
+    "cut_rate_brics": 0.4602842533175366,
+    "cut_rate_nonbrics": 0.2575211145208158,
+    "cut_rate_ring": 0.4134376344525989,
+    "rings_whole": 0.21102690061815096,
+    "fg_whole": {
+     "carboxylic_acid": 0.397026321076954,
+     "ester": 0.32645324347093513,
+     "amide": 0.2708940238142376,
+     "carbonyl": 0.5598629892886134,
+     "nitro": 0.9779448621553885,
+     "sulfonyl": 1.0,
+     "nitrile": 0.9907894736842106,
+     "cf3": 0.7546620046620046,
+     "methoxy": 0.9947720260541653,
+     "phenyl": 0.4090909090909091
+    }
+   },
+   "random": {
+    "cut_rate_brics": 0.33448872720225853,
+    "cut_rate_nonbrics": 0.3400673492110909,
+    "cut_rate_ring": 0.42378591240541047,
+    "rings_whole": 0.1268813677748704,
+    "fg_whole": {
+     "carboxylic_acid": 0.38637733574442434,
+     "ester": 0.2472620050547599,
+     "amide": 0.37576717481686794,
+     "carbonyl": 0.5843744431464946,
+     "nitro": 0.28671679197994987,
+     "sulfonyl": 0.28326891220320266,
+     "nitrile": 0.6743421052631579,
+     "cf3": 0.28525641025641024,
+     "methoxy": 0.8302194034967433,
+     "phenyl": 0.16699437770745645
+    }
+   },
+   "fg_count": {
+    "carboxylic_acid": 4977,
+    "ester": 7122,
+    "amide": 35357,
+    "carbonyl": 50507,
+    "nitro": 1995,
+    "sulfonyl": 5433,
+    "nitrile": 3040,
+    "cf3": 3432,
+    "methoxy": 11668,
+    "phenyl": 65098
+   }
+  },
+  "brics_preference": 0.20834176080555317,
+  "no_atom": 0.043524644156141705,
+  "whole_functional_group": 0.17682886082233104,
+  "cuts_atom": 0.019572605512119215
+ },
+ "representation": {
+  "r2_heavy_atoms": 0.954785356249822,
+  "r2_rings": 0.9217732379789645,
+  "nn_tanimoto": 0.3114262184414391,
+  "nn_tanimoto_best": 0.4285290691316851,
+  "nn_tanimoto_random": 0.1033009606160061
+ },
+ "objective": {
+  "name": "descriptors",
+  "r2_mean": 0.9979020878560602,
+  "r2_median": 0.9991442035538564
+ }
+}

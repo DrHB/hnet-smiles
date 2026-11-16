@@ -1,0 +1,161 @@
+{
+ "model": "masked-fragments-30m",
+ "molecules": 50000,
+ "device": "mps",
+ "pieces": {
+  "strings": {
+   "learned": {
+    "bytes_per_unit": 4.333169924024515,
+    "distinct": 14928,
+    "atoms_split": 0.0038163290162802972
+   },
+   "random": {
+    "bytes_per_unit": 4.333169924024515,
+    "distinct": 102058,
+    "atoms_split": 0.3071738865657099
+   }
+  },
+  "chem": {
+   "molecules": 50000,
+   "skipped": 0,
+   "learned": {
+    "cut_rate_brics": 0.5532809809249905,
+    "cut_rate_nonbrics": 0.17723976862287158,
+    "cut_rate_ring": 0.48955562912347134,
+    "rings_whole": 0.015257705497764817,
+    "fg_whole": {
+     "carboxylic_acid": 1.0,
+     "ester": 0.18899185622016287,
+     "amide": 0.3059365896427864,
+     "carbonyl": 0.9736868156889144,
+     "nitro": 1.0,
+     "sulfonyl": 0.9815939628198049,
+     "nitrile": 0.9993421052631579,
+     "cf3": 1.0,
+     "methoxy": 0.9987144326362701,
+     "phenyl": 0.03247411594826262
+    }
+   },
+   "random": {
+    "cut_rate_brics": 0.39504340434527924,
+    "cut_rate_nonbrics": 0.39847106428047685,
+    "cut_rate_ring": 0.4757504857342305,
+    "rings_whole": 0.0784559772417776,
+    "fg_whole": {
+     "carboxylic_acid": 0.31464737793851716,
+     "ester": 0.17663577646728448,
+     "amide": 0.2796051701218995,
+     "carbonyl": 0.49735680202744176,
+     "nitro": 0.1899749373433584,
+     "sulfonyl": 0.20173016749493833,
+     "nitrile": 0.6134868421052632,
+     "cf3": 0.206002331002331,
+     "methoxy": 0.7914809736030168,
+     "phenyl": 0.09113951273464622
+    }
+   },
+   "fg_count": {
+    "carboxylic_acid": 4977,
+    "ester": 7122,
+    "amide": 35357,
+    "carbonyl": 50507,
+    "nitro": 1995,
+    "sulfonyl": 5433,
+    "nitrile": 3040,
+    "cf3": 3432,
+    "methoxy": 11668,
+    "phenyl": 65098
+   }
+  },
+  "brics_preference": 0.37946887223731646,
+  "no_atom": 0.036865533826711316,
+  "whole_functional_group": 0.1473125075059999,
+  "cuts_atom": 0.00032681861763599886
+ },
+ "groups": {
+  "strings": {
+   "learned": {
+    "bytes_per_unit": 11.005550444035523,
+    "distinct": 84287,
+    "atoms_split": 0.0014615728147456457
+   },
+   "random": {
+    "bytes_per_unit": 11.005550444035523,
+    "distinct": 119127,
+    "atoms_split": 0.1075473996183671
+   }
+  },
+  "chem": {
+   "molecules": 50000,
+   "skipped": 0,
+   "learned": {
+    "cut_rate_brics": 0.12263764528674174,
+    "cut_rate_nonbrics": 0.03722401759769709,
+    "cut_rate_ring": 0.3084905227579041,
+    "rings_whole": 0.24723186721518356,
+    "fg_whole": {
+     "carboxylic_acid": 1.0,
+     "ester": 0.7058410558831789,
+     "amide": 0.8403145063212376,
+     "carbonyl": 1.0,
+     "nitro": 1.0,
+     "sulfonyl": 1.0,
+     "nitrile": 1.0,
+     "cf3": 1.0,
+     "methoxy": 1.0,
+     "phenyl": 0.38723155857322805
+    }
+   },
+   "random": {
+    "cut_rate_brics": 0.16705057454052175,
+    "cut_rate_nonbrics": 0.15689650490182766,
+    "cut_rate_ring": 0.26803602182735264,
+    "rings_whole": 0.32470393634542305,
+    "fg_whole": {
+     "carboxylic_acid": 0.7088607594936709,
+     "ester": 0.5477393990452121,
+     "amide": 0.6392227847385242,
+     "carbonyl": 0.8070960460926209,
+     "nitro": 0.6290726817042607,
+     "sulfonyl": 0.6243327811522179,
+     "nitrile": 0.8661184210526316,
+     "cf3": 0.6148018648018648,
+     "methoxy": 0.933064792595132,
+     "phenyl": 0.3751728163691665
+    }
+   },
+   "fg_count": {
+    "carboxylic_acid": 4977,
+    "ester": 7122,
+    "amide": 35357,
+    "carbonyl": 50507,
+    "nitro": 1995,
+    "sulfonyl": 5433,
+    "nitrile": 3040,
+    "cf3": 3432,
+    "methoxy": 11668,
+    "phenyl": 65098
+   }
+  },
+  "brics_preference": 0.07525955805035056,
+  "no_atom": 0.0014351148091847348,
+  "whole_functional_group": 0.4215487238979118,
+  "cuts_atom": 0.0003000240019201536
+ },
+ "representation": {
+  "r2_heavy_atoms": 0.798627375239509,
+  "r2_rings": 0.8108083236903366,
+  "nn_tanimoto": 0.29144061165169866,
+  "nn_tanimoto_best": 0.4285290691316851,
+  "nn_tanimoto_random": 0.1033009606160061
+ },
+ "objective": {
+  "name": "masked_fragments",
+  "random_mask_accuracy": 0.9289529012154777,
+  "random_mask_molecules_exact": 0.50122,
+  "fragment_mask_accuracy": 0.8410534767278406,
+  "fragment_mask_molecules_exact": 0.4199,
+  "fragment_bytes_accuracy": 0.8327595839658685,
+  "other_bytes_accuracy": 0.9375348760873133
+ }
+}

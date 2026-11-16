@@ -1,0 +1,157 @@
+{
+ "model": "descriptors-20m",
+ "molecules": 50000,
+ "device": "mps",
+ "pieces": {
+  "strings": {
+   "learned": {
+    "bytes_per_unit": 2.8367157553932727,
+    "distinct": 3704,
+    "atoms_split": 0.29280175388737767
+   },
+   "random": {
+    "bytes_per_unit": 2.8367157553932727,
+    "distinct": 62800,
+    "atoms_split": 0.45483334009987414
+   }
+  },
+  "chem": {
+   "molecules": 50000,
+   "skipped": 0,
+   "learned": {
+    "cut_rate_brics": 0.8780890636905365,
+    "cut_rate_nonbrics": 0.7730331586236863,
+    "cut_rate_ring": 0.5271050239860336,
+    "rings_whole": 0.05804344881182401,
+    "fg_whole": {
+     "carboxylic_acid": 0.0,
+     "ester": 0.0,
+     "amide": 0.0,
+     "carbonyl": 1.979923574950007e-05,
+     "nitro": 0.0,
+     "sulfonyl": 0.0,
+     "nitrile": 0.8177631578947369,
+     "cf3": 0.0,
+     "methoxy": 0.09221803222488859,
+     "phenyl": 0.12163200098313312
+    }
+   },
+   "random": {
+    "cut_rate_brics": 0.5511360883678116,
+    "cut_rate_nonbrics": 0.5778888194878201,
+    "cut_rate_ring": 0.5838878824963329,
+    "rings_whole": 0.02960993034215761,
+    "fg_whole": {
+     "carboxylic_acid": 0.12718505123568416,
+     "ester": 0.032715529345689415,
+     "amide": 0.1163277427383545,
+     "carbonyl": 0.2863959451165185,
+     "nitro": 0.06015037593984962,
+     "sulfonyl": 0.04932817964292288,
+     "nitrile": 0.4641447368421053,
+     "cf3": 0.05710955710955711,
+     "methoxy": 0.6214432636270141,
+     "phenyl": 0.03872622814833021
+    }
+   },
+   "fg_count": {
+    "carboxylic_acid": 4977,
+    "ester": 7122,
+    "amide": 35357,
+    "carbonyl": 50507,
+    "nitro": 1995,
+    "sulfonyl": 5433,
+    "nitrile": 3040,
+    "cf3": 3432,
+    "methoxy": 11668,
+    "phenyl": 65098
+   }
+  },
+  "brics_preference": 0.13180863618685879,
+  "no_atom": 0.0426886324325857,
+  "whole_functional_group": 0.014797505780577775,
+  "cuts_atom": 0.018209142206079852
+ },
+ "groups": {
+  "strings": {
+   "learned": {
+    "bytes_per_unit": 5.311582783294921,
+    "distinct": 44204,
+    "atoms_split": 0.061832649912711625
+   },
+   "random": {
+    "bytes_per_unit": 5.311582783294921,
+    "distinct": 115353,
+    "atoms_split": 0.25549104786650967
+   }
+  },
+  "chem": {
+   "molecules": 50000,
+   "skipped": 0,
+   "learned": {
+    "cut_rate_brics": 0.6646260091345116,
+    "cut_rate_nonbrics": 0.5536322407191158,
+    "cut_rate_ring": 0.36137882806310145,
+    "rings_whole": 0.23215240594052347,
+    "fg_whole": {
+     "carboxylic_acid": 0.0,
+     "ester": 0.0,
+     "amide": 0.0,
+     "carbonyl": 0.02059120517948007,
+     "nitro": 0.0,
+     "sulfonyl": 0.07491257132339407,
+     "nitrile": 0.8513157894736842,
+     "cf3": 0.0008741258741258741,
+     "methoxy": 0.7051765512512855,
+     "phenyl": 0.35580202156748286
+    }
+   },
+   "random": {
+    "cut_rate_brics": 0.3330220963572061,
+    "cut_rate_nonbrics": 0.3479455774923282,
+    "cut_rate_ring": 0.4180711732388027,
+    "rings_whole": 0.1273448027549427,
+    "fg_whole": {
+     "carboxylic_acid": 0.3992364878440828,
+     "ester": 0.21229991575400167,
+     "amide": 0.36190853296376957,
+     "carbonyl": 0.571603936088067,
+     "nitro": 0.2832080200501253,
+     "sulfonyl": 0.2759064973311246,
+     "nitrile": 0.6776315789473685,
+     "cf3": 0.28146853146853146,
+     "methoxy": 0.8291909496057593,
+     "phenyl": 0.1523395496021383
+    }
+   },
+   "fg_count": {
+    "carboxylic_acid": 4977,
+    "ester": 7122,
+    "amide": 35357,
+    "carbonyl": 50507,
+    "nitro": 1995,
+    "sulfonyl": 5433,
+    "nitrile": 3040,
+    "cf3": 3432,
+    "methoxy": 11668,
+    "phenyl": 65098
+   }
+  },
+  "brics_preference": 0.12591724955051797,
+  "no_atom": 0.013420535035536302,
+  "whole_functional_group": 0.08311754129813087,
+  "cuts_atom": 0.00712656715697513
+ },
+ "representation": {
+  "r2_heavy_atoms": 0.8456078707943466,
+  "r2_rings": 0.8196650668497392,
+  "nn_tanimoto": 0.27654445105860365,
+  "nn_tanimoto_best": 0.4285290691316851,
+  "nn_tanimoto_random": 0.1033009606160061
+ },
+ "objective": {
+  "name": "descriptors",
+  "r2_mean": 0.9983688450358804,
+  "r2_median": 0.9995849010740717
+ }
+}
