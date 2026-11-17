@@ -2,11 +2,11 @@
 
 One byte-level H-Net ([Hwang, Wang, Gu](https://arxiv.org/abs/2507.07955)) trained on SMILES under four objectives: next byte, fingerprint, descriptors and masked fragments. The network learns where to cut the string, and this repository holds the model, the training script and the evaluation that scores the learned cuts against chemical fragments.
 
-[![Blog post](https://img.shields.io/badge/blog-post-1f6feb)](https://drhb.github.io/blogposts/posts/learned-cuts/)
+[![Blog post](https://img.shields.io/badge/blog-post-1f6feb)](https://drhb.github.io/blog/posts/learned-cuts/)
 [![Hugging Face models](https://img.shields.io/badge/Hugging%20Face-models-ffd21e?logo=huggingface&logoColor=000)](https://huggingface.co/Asimo/hnet-smiles)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
-Post: [How the training objective shapes learned tokens](https://drhb.github.io/blogposts/posts/learned-cuts/)
+Post: [How the training objective shapes learned tokens](https://drhb.github.io/blog/posts/learned-cuts/)
 
 Weights: [Asimo/hnet-smiles](https://huggingface.co/Asimo/hnet-smiles)
 
